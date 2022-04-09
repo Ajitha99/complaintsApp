@@ -43,6 +43,7 @@ buttonList.forEach(element => {
 function renderRestult(array, n){
     // console.log("Result Render -Part");//Testing
     // console.log(n);//Testing
+   resultUL.innerHTML = " "
     let arrayDescriptor = [];
   for(let i = 0; i < n; i++){
     //   console.log("Result-Render For loop");//Testing
@@ -96,8 +97,7 @@ function renderRestult(array, n){
 } 
 cnt(sortedArrayDescriptor);
 
-
-//Sending sorted array to display the in the page
+//Sending sorted array to display in the page
  for(let j = 0; j < sortedArrayDescriptor.length;j++){
     //  console.log("inside j loop")//Testing
     //  console.log(arrayDescriptor[j].descriptor);//Testing
@@ -136,7 +136,7 @@ cnt(sortedArrayDescriptor);
             //GoogleMAP API testing 
             // li.appendChild(btnMap);
             // btnMap.addEventListener("click",initMap);
-            div.style.display = "block";// setting display value to block since the resolution descrription is displayed.
+            div.style.display = "block";// setting display value to block since the resolution description is displayed.
         }
         else{//if the display is not none then we are setting displays to none so the resolution description disappears on button click. 
             div.style.display = "none";
